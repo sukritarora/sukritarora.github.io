@@ -1,0 +1,5 @@
+- data - input image data files to process (empty for submission)
+- index.md - markdown that is converted to the display website 
+- index.html - display website
+- run_output.txt - output of running main.py that outputs runtimes and offsets for every file in data
+- main.py - code that takes all the images in data and outputs the color images in out
