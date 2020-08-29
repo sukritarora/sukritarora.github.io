@@ -1,0 +1,253 @@
+<p><br></p>
+<title>
+Final Project
+</title>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- common.css -->
+<style>* {-webkit-tap-highlight-color: rgba(0,0,0,0);}html {-webkit-text-size-adjust: none;}body {font-family: -apple-system, Helvetica, Arial, sans-serif;margin: 0;padding: 20px;color: #333;word-wrap: break-word;}h1, h2, h3, h4, h5, h6 {line-height: 1.1;}img {max-width: 100% !important;height: auto;}blockquote {margin: 0;padding: 0 15px;color: #777;border-left: 4px solid #ddd;}hr {background-color: #ddd;border: 0;height: 1px;margin: 15px 0;}code {font-family: Menlo, Consolas, 'Ubuntu Mono', Monaco, 'source-code-pro', monospace;line-height: 1.4;margin: 0;padding: 0.2em 0;font-size: 90%;background-color: rgba(0,0,0,0.04);border-radius: 3px;}pre > code {margin: 0;padding: 0;font-size: 100%;word-break: normal;background: transparent;border: 0;}ol {list-style-type: decimal;}ol ol, ul ol {list-style-type: lower-latin;}ol ol ol, ul ol ol, ul ul ol, ol ul ol {list-style-type: lower-roman;}table {border-spacing: 0;border-collapse: collapse;margin-top: 0;margin-bottom: 16px;}table th {font-weight: bold;}table th, table td {padding: 6px 13px;border: 1px solid #ddd;}table tr {border-top: 1px solid #ccc;}table tr:nth-child(even) {background-color: #f8f8f8;}input[type="checkbox"] {cursor: default;margin-right: 0.5em;font-size: 13px;}.task-list-item {list-style-type: none;}.task-list-item+.task-list-item {margin-top: 3px;}.task-list-item input {float: left;margin: 0.3em 1em 0.25em -1.6em;vertical-align: middle;}#tag-field {margin: 8px 2px 10px;}#tag-field .tag {display: inline-block;background: #cadff3;border-radius: 4px;padding: 1px 8px;color: black;font-size: 12px;margin-right: 10px;line-height: 1.4;}</style>
+<!-- ace-static.css -->
+<style>.ace_static_highlight {white-space: pre-wrap;}.ace_static_highlight .ace_gutter {width: 2em;text-align: right;padding: 0 3px 0 0;margin-right: 3px;}.ace_static_highlight.ace_show_gutter > .ace_line {padding-left: 2.6em;}.ace_static_highlight .ace_line {position: relative;}.ace_static_highlight .ace_gutter-cell {-moz-user-select: -moz-none;-khtml-user-select: none;-webkit-user-select: none;user-select: none;top: 0;bottom: 0;left: 0;position: absolute;}.ace_static_highlight .ace_gutter-cell:before {content: counter(ace_line, decimal);counter-increment: ace_line;}.ace_static_highlight {counter-reset: ace_line;}</style>
+<style>.ace-chrome .ace_gutter {background: #ebebeb;color: #333;overflow : hidden;}.ace-chrome .ace_print-margin {width: 1px;background: #e8e8e8;}.ace-chrome {background-color: #FFFFFF;color: black;}.ace-chrome .ace_cursor {color: black;}.ace-chrome .ace_invisible {color: rgb(191, 191, 191);}.ace-chrome .ace_constant.ace_buildin {color: rgb(88, 72, 246);}.ace-chrome .ace_constant.ace_language {color: rgb(88, 92, 246);}.ace-chrome .ace_constant.ace_library {color: rgb(6, 150, 14);}.ace-chrome .ace_invalid {background-color: rgb(153, 0, 0);color: white;}.ace-chrome .ace_fold {}.ace-chrome .ace_support.ace_function {color: rgb(60, 76, 114);}.ace-chrome .ace_support.ace_constant {color: rgb(6, 150, 14);}.ace-chrome .ace_support.ace_type,.ace-chrome .ace_support.ace_class.ace-chrome .ace_support.ace_other {color: rgb(109, 121, 222);}.ace-chrome .ace_variable.ace_parameter {font-style:italic;color:#FD971F;}.ace-chrome .ace_keyword.ace_operator {color: rgb(104, 118, 135);}.ace-chrome .ace_comment {color: #236e24;}.ace-chrome .ace_comment.ace_doc {color: #236e24;}.ace-chrome .ace_comment.ace_doc.ace_tag {color: #236e24;}.ace-chrome .ace_constant.ace_numeric {color: rgb(0, 0, 205);}.ace-chrome .ace_variable {color: rgb(49, 132, 149);}.ace-chrome .ace_xml-pe {color: rgb(104, 104, 91);}.ace-chrome .ace_entity.ace_name.ace_function {color: #0000A2;}.ace-chrome .ace_heading {color: rgb(12, 7, 255);}.ace-chrome .ace_list {color:rgb(185, 6, 144);}.ace-chrome .ace_marker-layer .ace_selection {background: rgb(181, 213, 255);}.ace-chrome .ace_marker-layer .ace_step {background: rgb(252, 255, 0);}.ace-chrome .ace_marker-layer .ace_stack {background: rgb(164, 229, 101);}.ace-chrome .ace_marker-layer .ace_bracket {margin: -1px 0 0 -1px;border: 1px solid rgb(192, 192, 192);}.ace-chrome .ace_marker-layer .ace_active-line {background: rgba(0, 0, 0, 0.07);}.ace-chrome .ace_gutter-active-line {background-color : #dcdcdc;}.ace-chrome .ace_marker-layer .ace_selected-word {background: rgb(250, 250, 255);border: 1px solid rgb(200, 200, 250);}.ace-chrome .ace_storage,.ace-chrome .ace_keyword,.ace-chrome .ace_meta.ace_tag {color: rgb(147, 15, 128);}.ace-chrome .ace_string.ace_regex {color: rgb(255, 0, 0)}.ace-chrome .ace_string {color: #1A1AA6;}.ace-chrome .ace_entity.ace_other.ace_attribute-name {color: #994409;}.ace-chrome .ace_indent-guide {background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAE0lEQVQImWP4////f4bLly//BwAmVgd1/w11/gAAAABJRU5ErkJggg==") right repeat-y;}</style>
+<!-- export.css -->
+<style>
+    body{margin:0 auto;max-width:1200px;line-height:1.4}
+    #nav{margin:5px 0 10px;font-size:15px}
+    #titlearea{border-bottom:1px solid #ccc;font-size:17px;padding:10px 0;}
+    #contentarea{font-size:15px;margin:16px 0}
+    .cell{outline:0;min-height:20px;margin:5px 0;padding:5px 0;}
+    .code-cell{font-family:Menlo,Consolas,'Ubuntu Mono',Monaco,'source-code-pro',monospace;font-size:12px;}
+    .latex-cell{white-space:pre-wrap;}
+  </style>
+<!-- User CSS -->
+<style> .text-cell {font-size: 15px;}.code-cell {font-size: 12px;}.markdown-cell {font-size: 15px;}.latex-cell {font-size: 15px;}</style>
+<script type='text/x-mathjax-config'>MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$']]}});</script>
+<script type='text/javascript' src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+</head>
+<h1 id="final-project">Final Project</h1>
+<h2 id="cs-194-26-spring-2020">CS 194-26, Spring 2020</h2>
+<ul>
+<li>Sukrit Arora (<code>sukrit.arora@berkeley.edu</code>, <code>cs194-26-ahb</code>)</li>
+<li>Suraj Rampure (<code>suraj.rampure@berkeley.edu</code>, <code>cs194-26-adz</code>)</li>
+</ul>
+<hr />
+<p>We did three projects together:</p>
+<ul>
+<li><a href="#light">Project 1: Light Field Camera</a></li>
+<li><a href="#seam">Project 2: Seam Carving</a></li>
+<li><a href="#hdr">Project 3: HDR</a></li>
+</ul>
+<hr />
+<p><a name = 'light'></p>
+<h2 id="project-1-light-field-camera">Project 1: Light Field Camera</h2>
+<p></a></p>
+<p>In this project, we used images from the <a href="http://lightfield.stanford.edu/lfs.html">Stanford Light Field Archive</a> to simulate depth refocusing and aperture adjustment.</p>
+<p>Each “image” in the above dataset consisted of 289 sub-images, or sub-apertures. These could be arranged in a 17 by 17 grid, with the image at (8, 8) being at the center. Averaging these images in different ways will allow us to re-create the desired results.</p>
+<p><br></p>
+<h3 id="part-1-depth-refocusing">Part 1: Depth Refocusing</h3>
+<p>To change the depth of focus, one needs to “shift” all images that are off-center by some amount, and then average them all. Specifically, the shifts applied to the image at position <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mi>i</mi><mo>,</mo><mi>j</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(i, j)</annotation></semantics></math> in the aforementioned grid are given by</p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mi>x</mi><mo>=</mo><mi>C</mi><mo stretchy="false" form="prefix">(</mo><mi>i</mi><mo>−</mo><mn>8</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">dx = C (i - 8)</annotation></semantics></math></p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mi>y</mi><mo>=</mo><mi>C</mi><mo stretchy="false" form="prefix">(</mo><mi>j</mi><mo>−</mo><mn>8</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">dy = C (j - 8)</annotation></semantics></math></p>
+<p>We used <code>np.roll</code> to do our shifting; the cyclic artifacts were small enough to ignore since the shifts were relatively small. After averaging all 289 shifted images, the result is a new image whose depth of focus depends on the constant, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>C</mi><annotation encoding="application/x-tex">C</annotation></semantics></math>. Here are both of them with <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">C = 1</annotation></semantics></math>:</p>
+<p><img src="light_field/lego_C1.jpg" width=300>          <img src="light_field/chess_C1.jpg" width=525></p>
+<p>Varying <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>C</mi><annotation encoding="application/x-tex">C</annotation></semantics></math> within some range allows us to change the depth of focus and create a gif.</p>
+<p><img src="light_field/lego_depth.gif" width=300>          <img src="light_field/chess_depth.gif" width=525></p>
+<p>We noticed that the chess dataset was in a slightly different format than the lego dataset (the <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math> values increased rather than decreased across the grid), which meant that we had to edit our <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mi>y</mi></mrow><annotation encoding="application/x-tex">dy</annotation></semantics></math> to be <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><mo stretchy="false" form="prefix">(</mo><mn>8</mn><mo>−</mo><mi>j</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">C (8 - j)</annotation></semantics></math> in that case. For <code>lego</code>, we varied <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>C</mi><annotation encoding="application/x-tex">C</annotation></semantics></math> from -3 to 3; for <code>chess</code> we varied it from 0 to 3. This was done over 10 frames for both images.</p>
+<p><br></p>
+<h3 id="part-2-aperture-adjustment">Part 2: Aperture Adjustment</h3>
+<p>Previously, we included all 289 images in our averaging, but each was shifted. To perform aperture adjustment, no shifting is needed. However, we now only include a subset of all 289 images in our averaging.</p>
+<p>The hyperparameter we vary here is <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi><annotation encoding="application/x-tex">r</annotation></semantics></math>. Specifically, we include the image at <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mi>i</mi><mo>,</mo><mi>j</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(i, j)</annotation></semantics></math> in our average if <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mi>i</mi><mo>−</mo><mn>8</mn><msup><mo stretchy="false" form="postfix">)</mo><mn>2</mn></msup><mo>+</mo><mo stretchy="false" form="prefix">(</mo><mi>j</mi><mo>−</mo><mn>8</mn><msup><mo stretchy="false" form="postfix">)</mo><mn>2</mn></msup><mo>&lt;</mo><mo>=</mo><msup><mi>r</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">(i - 8)^2 + (j - 8)^2 &lt;= r^2</annotation></semantics></math>. We experimented with other inclusion conditions (L1 norm instead of L2, as well as a square window) but found that the L2 condition generated the most natural looking results.</p>
+<p>Varying <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi><annotation encoding="application/x-tex">r</annotation></semantics></math> from 0 to 12 over 13 frames yielded the following gifs:</p>
+<p><img src="light_field/lego_aperture.gif" width=300>          <img src="light_field/chess_aperture.gif" width=525></p>
+<p>In <code>lego</code>, the point of focus is the middle figure’s sword — notice how that never becomes blurry. In <code>chess</code> the point of focus appears to be the silver pawn in the third row from the right.</p>
+<p><br></p>
+<h3 id="summary">Summary</h3>
+<p>It was fascinating to see that simply averaging several images could recreate cool effects like these. I don’t think we thought this was possible before.</p>
+<p><br></p>
+<hr />
+<p><a name = 'seam'></p>
+<h2 id="project-2-seam-carving">Project 2: Seam Carving</h2>
+<p></a></p>
+<p>Traditionally when trying to resize an image in one dimension, we stretch or compress it, leading to odd artifacts. Seam carving solves this issue by instead strategically removing “seams” (a path across the image) of low importance. Doing this repeatedly results in an image with reduced dimensions but with the key subjects and structures still intact. This is largely a reimplementation of the ideas in <a href="https://inst.eecs.berkeley.edu/~cs194-26/fa18/hw/proj4-seamcarving/imret.pdf">Seam Carving for Content-Aware Image Resizing</a>.</p>
+<p>To formally define what it means for a seam to have “low importance” (henceforth referred to as “energy”), we need some metric of the energy of each pixel. The seam of lowest energy, then, is the path across the image with the lowest total energy. The energy of a pixel <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>p</mi><mrow><mi>i</mi><mo>,</mo><mi>j</mi></mrow></msub><annotation encoding="application/x-tex">p_{i, j}</annotation></semantics></math> at position <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mi>i</mi><mo>,</mo><mi>j</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(i, j)</annotation></semantics></math> is defined as:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>e</mi><mo stretchy="false" form="prefix">(</mo><mi>i</mi><mo>,</mo><mi>j</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mo minsize="1.2" maxsize="1.2" stretchy="false" form="prefix">|</mo><mfrac><mrow><mi>d</mi><msub><mi>p</mi><mrow><mi>i</mi><mo>,</mo><mi>j</mi></mrow></msub></mrow><mrow><mi>d</mi><mi>x</mi></mrow></mfrac><mo minsize="1.2" maxsize="1.2" stretchy="false" form="prefix">|</mo><mo>+</mo><mo minsize="1.2" maxsize="1.2" stretchy="false" form="prefix">|</mo><mfrac><mrow><mi>d</mi><msub><mi>p</mi><mrow><mi>i</mi><mo>,</mo><mi>j</mi></mrow></msub></mrow><mrow><mi>d</mi><mi>y</mi></mrow></mfrac><mo minsize="1.2" maxsize="1.2" stretchy="false" form="prefix">|</mo></mrow><annotation encoding="application/x-tex">e(i, j) = \big| \frac{dp_{i, j}}{dx} \big| + \big| \frac{dp_{i, j}}{dy} \big|</annotation></semantics></math></p>
+<p>We can compute <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mi>d</mi><msub><mi>p</mi><mrow><mi>i</mi><mo>,</mo><mi>j</mi></mrow></msub></mrow><mrow><mi>d</mi><mi>x</mi></mrow></mfrac><annotation encoding="application/x-tex">\frac{dp_{i, j}}{dx}</annotation></semantics></math> as the principal square root of</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo minsize="1.2" maxsize="1.2" stretchy="false" form="prefix">(</mo><mfrac><mrow><mi>d</mi><msub><mi>p</mi><mrow><mi>i</mi><mo>,</mo><mi>j</mi></mrow></msub></mrow><mrow><mi>d</mi><mi>x</mi></mrow></mfrac><msup><mo minsize="1.2" maxsize="1.2" stretchy="false" form="postfix">)</mo><mn>2</mn></msup><mo>=</mo><munder><mo>∑</mo><mrow><mi>c</mi><mo>∈</mo><mo stretchy="false" form="prefix">{</mo><mi>R</mi><mo>,</mo><mi>G</mi><mo>,</mo><mi>B</mi><mo stretchy="false" form="postfix">}</mo></mrow></munder><mo stretchy="false" form="prefix">(</mo><mi>c</mi><mo stretchy="false" form="prefix">[</mo><mi>i</mi><mo>+</mo><mn>1</mn><mo>,</mo><mi>j</mi><mo stretchy="false" form="postfix">]</mo><mo>−</mo><mi>c</mi><mo stretchy="false" form="prefix">[</mo><mi>i</mi><mo>−</mo><mn>1</mn><mo>,</mo><mi>j</mi><mo stretchy="false" form="postfix">]</mo><msup><mo stretchy="false" form="postfix">)</mo><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">\big( \frac{dp_{i, j}}{dx} \big)^2 = \sum_{c \in \{R, G, B\}} (c[i + 1, j] - c[i - 1, j])^2 </annotation></semantics></math></p>
+<p>where <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi><annotation encoding="application/x-tex">c</annotation></semantics></math> is the color channel of the entire image. A similar calculation can be made for <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math>.</p>
+<p><br></p>
+<p>Given the energy of each pixel, our task is now to determine the seam across the image with the lowest total energy. Our implementation assumes that seams are vertical; that is, that they are a path from the top of an image to the bottom, with precisely one seam per row, and with each consecutive pixel’s column varying from the previous by at most 1. In order to determine horizontal seams, we simply transpose our image before searching for seams and compressing.</p>
+<p>In order to do this, we compute the cumulative minimum energy for all possible pixels:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo stretchy="false" form="prefix">(</mo><mi>i</mi><mo>,</mo><mi>j</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>e</mi><mo stretchy="false" form="prefix">(</mo><mi>i</mi><mo>,</mo><mi>j</mi><mo stretchy="false" form="postfix">)</mo><mo>+</mo><mo>min</mo><mo stretchy="false" form="prefix">(</mo><mi>M</mi><mo stretchy="false" form="prefix">(</mo><mi>i</mi><mo>−</mo><mn>1</mn><mo>,</mo><mi>j</mi><mo>−</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo><mo>,</mo><mi>M</mi><mo stretchy="false" form="prefix">(</mo><mi>i</mi><mo>,</mo><mi>j</mi><mo>−</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo><mo>,</mo><mi>M</mi><mo stretchy="false" form="prefix">(</mo><mi>i</mi><mo>+</mo><mn>1</mn><mo>,</mo><mi>j</mi><mo>−</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">M(i, j) = e(i, j) + \min(M(i - 1, j - 1), M(i, j - 1), M(i + 1, j - 1))</annotation></semantics></math></p>
+<p>The value of <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math> for each pixel can be computed using dynamic programming. (Note, here our notation indexes into an image as <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(x, y)</annotation></semantics></math>, but in code this is <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mi>y</mi><mo>,</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(y, x)</annotation></semantics></math>). Then, the pixel with the lowest <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math> in the last row is the end of the seam with the lowest total energy. To find the rest of the seam, we backtrack our way across the image.</p>
+<p>In order to remove the seam, we can create a boolean mask with 0s in the positions of the seam and 1s elsewhere, and call the image with that mask applied. Here is an example provided in the spec (<code>cabin</code>) along with its energy map, and the first vertical seam to be removed:</p>
+<p><img src="seam_carving/original/ex1.jpg" width = 300>      <img src="seam_carving/export/ex1_energies.jpg" width = 300>      <img src="seam_carving/export/ex1_vert_seam.jpg" width = 300></p>
+<p>Removing seams repeatedly can resize our image! Below, we present several images, along with their resized versions using seam carving.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Name and Action</th>
+<th>Original</th>
+<th>Resized</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>cabin</code>, horizontal, 200px</td>
+<td><img src="seam_carving/original/ex1.jpg" height="200"></td>
+<td><img src="seam_carving/export/ex1_shrink_hor.jpg" height="200"></td>
+</tr>
+<tr class="even">
+<td><code>cabin</code>, vertical, 150px</td>
+<td><img src="seam_carving/original/ex1.jpg" width = 300></td>
+<td><img src="seam_carving/export/ex1_shrink_vert.jpg" width = 300></td>
+</tr>
+<tr class="odd">
+<td><code>sidewalk</code>, vertical, 350px</td>
+<td><img src="seam_carving/original/ex2.jpg" width = 200></td>
+<td><img src="seam_carving/export/ex2_shrink_vert.jpg" width = 200></td>
+</tr>
+<tr class="even">
+<td><code>junior</code>, horizontal, 150px</td>
+<td><img src="seam_carving/original/ex8.jpg" height="200"></td>
+<td><img src="seam_carving/export/ex8_shrink_hor.jpg" height="200"></td>
+</tr>
+<tr class="odd">
+<td><code>plane</code>, vertical, 200px</td>
+<td><img src="seam_carving/original/ex6.jpg" width = 300></td>
+<td><img src="seam_carving/export/ex6_shrink_vert.jpg" width = 300></td>
+</tr>
+<tr class="even">
+<td><code>nyc</code>, horizontal, 200px</td>
+<td><img src="seam_carving/original/ex9.jpg" height="200"></td>
+<td><img src="seam_carving/export/ex9_shrink_hor.jpg" height="200"></td>
+</tr>
+<tr class="odd">
+<td><code>eiffel</code>, vertical, 200px</td>
+<td><img src="seam_carving/original/ex3.jpg" width = 300></td>
+<td><img src="seam_carving/export/ex3_shrink_vert.jpg" width = 300></td>
+</tr>
+<tr class="even">
+<td><code>drone</code>, vertical, 200px</td>
+<td><img src="seam_carving/original/ex7.jpg" width = 200></td>
+<td><img src="seam_carving/export/ex7_shrink_vert.jpg" width = 200></td>
+</tr>
+</tbody>
+</table>
+<p>I consider the <code>junior</code> and <code>eiffel</code> examples to be somewhat of a failure. For <code>junior</code>, it deformed the structure of the beloved puppy, and one of the houses in the background is quite deformed. In the <code>eiffel</code> example it got rid of all of our bodies (though we’re probably less important than the Eiffel Tower, so it’s fine), but it also created some deformations towards the top of the tower. Overall, the simple energy function produces some quite satisfying results.</p>
+<p><br></p>
+<h3 id="bells-and-whistles-seam-insertion">Bells and Whistles: Seam Insertion</h3>
+<p>Just like we could remove seams to decrease the width or height of an image, we can also add seams to increase the width or height. A naive implementation of this would determine the lowest energy seam, and duplicate it, and repeat this process <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math> times. The issue with this, however, is that it’s likely that the same seam will be duplicated <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math> times, resulting in undesirable artifacts.</p>
+<p>Instead, we first specify in advance the number of seams <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math> that we want to insert. We then remove <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math> seams from the original image, while keeping track of which seams were removed. We then duplicate each of those <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math> removed seams, giving us an expanded image with some of the least “important” information duplicated.</p>
+<p>Again, we present a table of results.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Name and Action</th>
+<th>Original</th>
+<th>Resized</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>cabin</code>, horizontal, 150px</td>
+<td><img src="seam_carving/original/ex1.jpg" height=200></td>
+<td><img src="seam_carving/export/ex1_expand.jpg" height=200></td>
+</tr>
+<tr class="even">
+<td><code>cabin</code>, vertical, 100px</td>
+<td><img src="seam_carving/original/ex1.jpg" width = 300></td>
+<td><img src="seam_carving/export/ex1_expand_height.jpg" width = 300></td>
+</tr>
+<tr class="odd">
+<td><code>sidewalk</code>, horizontal, 200px</td>
+<td><img src="seam_carving/original/ex2.jpg" height="200"></td>
+<td><img src="seam_carving/export/ex2_expand_hor.jpg" height="200"></td>
+</tr>
+<tr class="even">
+<td><code>junior</code>, horizontal, 150px</td>
+<td><img src="seam_carving/original/ex8.jpg" height="200"></td>
+<td><img src="seam_carving/export/ex8_expand_hor.jpg" height="200"></td>
+</tr>
+<tr class="odd">
+<td><code>plane</code>, horizontal, 200px</td>
+<td><img src="seam_carving/original/ex6.jpg" height="200"></td>
+<td><img src="seam_carving/export/ex6_expand_hor.jpg" height="200"></td>
+</tr>
+<tr class="even">
+<td><code>nyc</code>, horizontal, 200px</td>
+<td><img src="seam_carving/original/ex9.jpg" height="200"></td>
+<td><img src="seam_carving/export/ex9_expand_hor.jpg" height="200"></td>
+</tr>
+<tr class="odd">
+<td><code>eiffel</code>, vertical, 200px</td>
+<td><img src="seam_carving/original/ex3.jpg" width = 300></td>
+<td><img src="seam_carving/export/ex3_expand_vert.jpg" width = 300></td>
+</tr>
+<tr class="even">
+<td><code>drone</code>, horizontal, 200px</td>
+<td><img src="seam_carving/original/ex7.jpg" width=200></td>
+<td><img src="seam_carving/export/ex7_expand_hor.jpg" width=250></td>
+</tr>
+</tbody>
+</table>
+<p>Again, the <code>cabin</code>, <code>sidewalk</code>, <code>plane</code>, <code>nyc</code>, and <code>drone</code> examples largely worked, with some small artifacts. The <code>eiffel</code> example is pretty bad (even worse than the result of the seam removal), and poor <code>junior</code> looks awkwardly stretched.</p>
+<p><br></p>
+<h3 id="summary-1">Summary</h3>
+<p>Seam removal/insertion is a fascinating application of dynamic programming. The results largely turned out well.</p>
+<p><br></p>
+<hr />
+<p><a name = 'hdr'></p>
+<h2 id="project-3-high-dynamic-range-imaging-hdr">Project 3: High Dynamic Range Imaging (HDR)</h2>
+<p></a></p>
+<p>Cameras are, generally, unable to capture the full dynamic range of the world they capture. Most images of a scene with a large dynamic range (both very dark and very bright parts) results in either a partially under-exposed image or a partially over-exposed image. HDR imaging aims to ameliorate this issue by combining information from multiple exposures of the same scene to create an image that more accurately depicts the true dynamic range of the scene.</p>
+<p>The HDR task can be split into two main steps:</p>
+<ol type="1">
+<li>Recovering a radiance map from a collection of images with varying exposures</li>
+<li>Converting this radiance map into a display image</li>
+</ol>
+<h3 id="recovering-a-radiance-map">Recovering a Radiance Map</h3>
+<p>The method we use to build our radiance map is specified in <a href="http://www.pauldebevec.com/Research/HDR/debevec-siggraph97.pdf">Debevec and Malik 1997</a>. We denote a pixel <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>Z</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><annotation encoding="application/x-tex">Z_{ij}</annotation></semantics></math> to be the <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi><annotation encoding="application/x-tex">i</annotation></semantics></math> <sup>th</sup> pixel in the <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>j</mi><annotation encoding="application/x-tex">j</annotation></semantics></math> <sup>th</sup> image. We can model the value <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>Z</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><annotation encoding="application/x-tex">Z_{ij}</annotation></semantics></math> to a be a function of the product of the unknown radiance <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>E</mi><mi>i</mi></msub><annotation encoding="application/x-tex">E_i</annotation></semantics></math> (which we want to solve for) and the known exposure time <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>t</mi><mi>j</mi></msub><annotation encoding="application/x-tex">t_j</annotation></semantics></math>: <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>Z</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>=</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><msub><mi>E</mi><mi>i</mi></msub><mo>⋅</mo><msub><mi>t</mi><mi>j</mi></msub><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">Z_{ij}=f(E_i\cdot t_j)</annotation></semantics></math>. In general, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> is some complicated pixel response curve. Rather than solve directly for <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>, we solve for <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>=</mo><mo>log</mo><msup><mi>f</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup></mrow><annotation encoding="application/x-tex">g=\log{f^{-1}}</annotation></semantics></math>, which maps pixel values to the log of the exposure values: <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo stretchy="false" form="prefix">(</mo><msub><mi>Z</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mo>log</mo><mo stretchy="false" form="prefix">(</mo><msub><mi>E</mi><mi>i</mi></msub><mo stretchy="false" form="postfix">)</mo><mo>+</mo><mo>log</mo><mo stretchy="false" form="prefix">(</mo><msub><mi>t</mi><mi>j</mi></msub><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">g(Z_{ij}) = \log({E_i})+\log({t_j})</annotation></semantics></math>.</p>
+<p>Once we have <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi><annotation encoding="application/x-tex">g</annotation></semantics></math>, recovering the radiance map is straightforward. However, solving for <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi><annotation encoding="application/x-tex">g</annotation></semantics></math> is tricky because we know neither <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi><annotation encoding="application/x-tex">g</annotation></semantics></math> nor <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>E</mi><mi>i</mi></msub><annotation encoding="application/x-tex">E_i</annotation></semantics></math>. But, the key observation is that we know that the value of <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>E</mi><mi>i</mi></msub><annotation encoding="application/x-tex">E_i</annotation></semantics></math> remains constant across the image sequence. Additionally, as the domain of <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi><annotation encoding="application/x-tex">g</annotation></semantics></math> is pixel values, we only have to solve for <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>256</mn><annotation encoding="application/x-tex">256</annotation></semantics></math> values of our function. And, to make the method robust, we add a regularization term on the second derivative of <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi><annotation encoding="application/x-tex">g</annotation></semantics></math>, as we expect <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi><annotation encoding="application/x-tex">g</annotation></semantics></math> to be smooth. Lastly, we weight the contribution of each pixel by a triangle function to account for the fact that very dark and very bright pixel values have more noise and saturation, respectively.</p>
+<p>All put together, we can formulate this problem as a weighted, regularized least squares problem (which can be solved as a modified standard least squares problem). We solve for both the function <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi><annotation encoding="application/x-tex">g</annotation></semantics></math> and select radiance values in the least square problem, although we only use the solution to <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi><annotation encoding="application/x-tex">g</annotation></semantics></math> when we construct the overall radiance map. The number of unknowns is thus 256 (values of g) plus the number of pixel values used to solve the equation, and the number of equations is the number of pixels used times the number of exposure images.</p>
+<p>Clearly, using all the pixels in the image to solve for <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi><annotation encoding="application/x-tex">g</annotation></semantics></math> is not computationally feasible, so instead we use a subset of values. While the paper says they handpicked values to feed into their solver, we tried to automate this process. We randomly sample pixels, but ensure that we capture the full range of pixel values as well as maximize the variance of values (to try to get a random sample that accurately portrays the data).</p>
+<p>The results shown in this description are from computation on the Stanford chapel dataset. Additional examples are shown after the explanation of the entire method.</p>
+<p>The Stanford Chapel Dataset:</p>
+<p><img src="hdr/out/chapel/input_ims.png" /></p>
+<p>And the results of the recovered mapping:</p>
+<p><img src="hdr/out/chapel/g_fig.png" /></p>
+<h3 id="from-radiance-map-to-image">From Radiance Map to Image</h3>
+<p>Once we have a radiance map of the image, the next step is to convert this radiance map back into a viewable image that preserves the details of the radiance map. This can be achieved via two methods: a simple global tone mapping, or a more sophisticated local tone mapping method. Examples of global tone mapped radiance maps are <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mi>R</mi><mrow><mn>1</mn><mo>+</mo><mi>R</mi></mrow></mfrac><annotation encoding="application/x-tex">\frac{R}{1+R}</annotation></semantics></math> and <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>log</mo><mo stretchy="false" form="prefix">(</mo><mi>R</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\log({R})</annotation></semantics></math>. These two mappings, as well as a “heatmap” visualization, are shown below.</p>
+<p><img src="hdr/out/chapel/global_tone_map.png" /></p>
+<p>However, we can do better than a global tone map via a local method. The method done here is a simplified version of <a href="http://people.csail.mit.edu/fredo/PUBLI/Siggraph2002/DurandBilateral.pdf">Durand 2002</a>. The idea here is to use a bilateral filter, a non-linear local filter. The expression of the output for a pixel <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>s</mi><annotation encoding="application/x-tex">s</annotation></semantics></math> is</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>J</mi><mi>s</mi></msub><mo>=</mo><mfrac><mn>1</mn><mrow><mi>k</mi><mo stretchy="false" form="prefix">(</mo><mi>s</mi><mo stretchy="false" form="postfix">)</mo></mrow></mfrac><munder><mo>∑</mo><mrow><mi>p</mi><mo>∈</mo><mi>Ω</mi></mrow></munder><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>p</mi><mo>−</mo><mi>s</mi><mo stretchy="false" form="postfix">)</mo><mo>⋅</mo><mi>g</mi><mo stretchy="false" form="prefix">(</mo><msub><mi>I</mi><mi>p</mi></msub><mo>−</mo><msub><mi>I</mi><mi>s</mi></msub><mo stretchy="false" form="postfix">)</mo><mo>⋅</mo><msub><mi>I</mi><mi>p</mi></msub></mrow></mrow><annotation encoding="application/x-tex">J_s = \frac{1}{k(s)}\sum_{p\in\Omega}{f(p-s)\cdot g(I_p-I_s)\cdot I_p}</annotation></semantics></math></p>
+<p>Where <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>I</mi><mi>x</mi></msub><annotation encoding="application/x-tex">I_x</annotation></semantics></math> is the image intensity at pixel <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> is a spatial gaussian, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi><annotation encoding="application/x-tex">g</annotation></semantics></math> is a intensity gaussian, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo stretchy="false" form="prefix">(</mo><mi>s</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msub><mo>∑</mo><mrow><mi>p</mi><mo>∈</mo><mi>Ω</mi></mrow></msub><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>p</mi><mo>−</mo><mi>s</mi><mo stretchy="false" form="postfix">)</mo><mo>⋅</mo><mi>g</mi><mo stretchy="false" form="prefix">(</mo><msub><mi>I</mi><mi>p</mi></msub><mo>−</mo><msub><mi>I</mi><mi>s</mi></msub><mo stretchy="false" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">k(s)=\sum_{p\in\Omega}{f(p-s)\cdot g(I_p-I_s)}</annotation></semantics></math> is a normalization factor, and <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Ω</mi><annotation encoding="application/x-tex">\Omega</annotation></semantics></math> is a neighborhood determined by the standard deviation of the spatial gaussian. What this weighting achieves is a robust, edge-preserving filter, which helps us decompose our HDR image into a base layer and detail layer.</p>
+<p>The way this filter is used to create our HDR image from our radiance map is as follows:</p>
+<p>With the linear RGB radiance map as input</p>
+<ol type="1">
+<li>Compute the intensity <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math> by averaging the color channels.</li>
+<li>Compute the chrominance channels: <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo minsize="1.2" maxsize="1.2" stretchy="false" form="prefix">(</mo><mfrac><mi>R</mi><mi>I</mi></mfrac><mo>,</mo><mfrac><mi>G</mi><mi>I</mi></mfrac><mo>,</mo><mfrac><mi>B</mi><mi>I</mi></mfrac><mo minsize="1.2" maxsize="1.2" stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\big(\frac{R}{I},\frac{G}{I},\frac{B}{I}\big)</annotation></semantics></math></li>
+<li>Compute the log intensity: <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mo>=</mo><mo>log</mo><mo stretchy="false" form="prefix">(</mo><mi>I</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">L = \log(I)</annotation></semantics></math></li>
+<li>Filter that with a bilateral filter: <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><mo>=</mo><mtext mathvariant="normal">bf</mtext><mo stretchy="false" form="prefix">(</mo><mi>L</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">B = \text{bf}(L)</annotation></semantics></math></li>
+<li>Compute the detail layer: <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>D</mi><mo>=</mo><mi>L</mi><mo>−</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">D = L - B</annotation></semantics></math></li>
+<li><p>Apply an offset and a scale to the base: <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><mi>′</mi><mo>=</mo><mo stretchy="false" form="prefix">(</mo><mi>B</mi><mo>−</mo><mi>o</mi><mo stretchy="false" form="postfix">)</mo><mo>*</mo><mi>s</mi></mrow><annotation encoding="application/x-tex">B&#39; = (B - o) * s</annotation></semantics></math></p>
+<p>The offset is such that the maximum intensity of the base is 1</p>
+<p>The scale is set so that the output base has <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mi>R</mi></mrow><annotation encoding="application/x-tex">dR</annotation></semantics></math> stops of dynamic range</p></li>
+<li>Reconstruct the log intensity: <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo>=</mo><msup><mn>2</mn><mrow><mo stretchy="false" form="prefix">(</mo><mi>B</mi><mi>′</mi><mo>+</mo><mi>D</mi><mo stretchy="false" form="postfix">)</mo></mrow></msup></mrow><annotation encoding="application/x-tex">O = 2^{(B&#39; + D)}</annotation></semantics></math></li>
+<li>Put back the colors: <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>O</mi><mtext mathvariant="normal">color</mtext></msub><mo>=</mo><mi>O</mi><mo>⋅</mo><mo minsize="1.2" maxsize="1.2" stretchy="false" form="prefix">(</mo><mfrac><mi>R</mi><mi>I</mi></mfrac><mo>,</mo><mfrac><mi>G</mi><mi>I</mi></mfrac><mo>,</mo><mfrac><mi>B</mi><mi>I</mi></mfrac><mo minsize="1.2" maxsize="1.2" stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">O_{\text{color}} = O \cdot \big(\frac{R}{I},\frac{G}{I},\frac{B}{I}\big)</annotation></semantics></math></li>
+<li><p>Apply gamma transformation: <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext mathvariant="normal">HDR</mtext><mo>=</mo><msubsup><mi>O</mi><mtext mathvariant="normal">color</mtext><mi>γ</mi></msubsup></mrow><annotation encoding="application/x-tex">\text{HDR} = O_{\text{color}}^{\gamma}</annotation></semantics></math></p></li>
+</ol>
+<p>The result of this local tone map on the chapel, with <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mi>R</mi><mo>=</mo><mn>5</mn></mrow><annotation encoding="application/x-tex">dR=5</annotation></semantics></math> and <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>γ</mi><mo>=</mo><mn>0.4</mn></mrow><annotation encoding="application/x-tex">\gamma=0.4</annotation></semantics></math>:</p>
+<p><img src="hdr/out/chapel/hdr.png" /></p>
+<h3 id="additional-results">Additional Results</h3>
+<p>The following are additional results run on the data provided. The results are ok, but in general not as good as the chapel because of the data itself. Either there were not enough exposure times in the dataset, or the alignment was slightly off. Also, personally, I am not a big fan of the radiance map construction method as there are many parameters (number of data points, strength of regularization) that require tuning for each image to get a good result. Additionally, for some images the regularization far out weighed the data consistency term, which leads me to question how much of the mapping construction comes from the data versus our prior.</p>
+<h4 id="mug">Mug</h4>
+<p><img src="hdr/out/mug/input_ims.png" /> <img src="hdr/out/mug/g_fig.png" /> <img src="hdr/out/mug/global_tone_map.png" /> <img src="hdr/out/mug/hdr.png" /></p>
+<h4 id="house">House</h4>
+<p><img src="hdr/out/house/input_ims.png" /> <img src="hdr/out/house/g_fig.png" /> <img src="hdr/out/house/global_tone_map.png" /> <img src="hdr/out/house/hdr.png" /></p>
+<h4 id="garden">Garden</h4>
+<p><img src="hdr/out/garden/input_ims.png" /> <img src="hdr/out/garden/g_fig.png" /> <img src="hdr/out/garden/global_tone_map.png" /> <img src="hdr/out/garden/hdr.png" /></p>
+<p><br></p>
+<h3 id="summary-2">Summary</h3>
+<p>This was one of our favorite classes at Berkeley. Thank you so much Prof. Efros and the GSIs!</p>
+<p><br></p>
