@@ -20,7 +20,13 @@
 				<div class="inner">
 					<a href="#" class="image avatar"><img src="images/profile_london_low_res.jpg" alt="" /></a>
 					<h1><strong>Sukrit Arora</strong><br />
-					UC Berkeley, EECS<br />Engineer, Researcher, Teacher</h1>
+					UC Berkeley, EECS MS<br />
+					<!-- Engineer, Researcher, Teacher -->
+				</h1> <br/>
+					<h4> <a href="#me"> About Me</a> </h4>
+					<h4> <a href="#Experience"> Work Experience</a> </h4>
+					<h4> <a href="#Coursework"> Skills and Classes</a> </h4>
+					<h4> <a href="#Projects"> Projects</a> </h4>
 				</div>
 			</header>
 
@@ -28,9 +34,9 @@
 			<div id="main">
 
 				<!-- One -->
-					<section id="one">
+					<section id="me">
 						<header class="major">
-							<h2>About Me</h2>
+							<h1>About Me</h1>
 						</header>
 						<p>I am in the 5<sup>th</sup> Year's M.S. program for Electrical Engineering and Computer Science at UC Berkeley. My interests lie in the intersection of signal processing, optimization, and machine (deep) learning. My research is in the field of computational medical imaging (MRI).
 						<ul class="actions">
@@ -40,28 +46,71 @@
 
 					<section id="Experience">
 						<header class="major">
-							<h2>Experience</h2>
+							<h1>Work Experience</h1>
 						</header>
-						<ul>
-							<li>Apple Inc., Product Security Intern
-							<li>UC Berkeley Research, Computational Medical Imaging</li>
-							<li>UC Berkeley EECS Department, Undergraduate Student Instructor
-								<br/>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;For EE120 (Signals), EE16B (Intro to EE), & CS61C (Computer Architecture)<br/></li>
 
+						<h2> UC Berkeley Research, Computational Medical Imaging </h2>
+
+						I am a graduate student researcher in <a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/mlustig.html"> Michael (Miki) Lustig</a>'s research group. My research is on computational medical imaging, specifically on the viability of cutting-edge computer vision/computational imaging algorithms for medical data.<br/><br/>
+						Currently, my interest is in self-superivised, single shot learning. I have been working on a deep decoder generative network for image denoising and subsampled MR image reconstruction that would enable faster scan times. You can read more about the project <a href="https://submissions2.mirasmart.com/ISMRM2020/ViewSubmission.aspx?sbmID=134&validate=false">here</a>, find the code <a href="https://github.com/mikgroup/mdd_mri">here</a>, and read about how my research has been used and cited <a href="https://arxiv.org/abs/2007.02471">here</a>. <br/><br/>
+
+						<figure>
+							<img src="resources/mdd.png" class="image fit" alt="Modified Deep Decoder">
+						  	<figcaption>Modified Deep Decoder network architecture and visualization for Shepp-Logan Phantom</figcaption>
+						</figure> <br/>
+
+						My previous research in this group related to stitching volumetric MR images in order to minimize overlap artifacts. This was done by searching over a family of functions that would minimze the total variation of the stitched image. You can see an example result below. <br/><br/>
+
+						<figure>
+							<img src="resources/mri_stitch.png" class="image fit" alt="Modified Deep Decoder">
+						  	<figcaption>Volumetric MR Image Stitch</figcaption>
+						</figure> <br/>
+
+						<h2>UC Berkeley EECS Department, Undergraduate Student Instructor</h2>
+
+						I have been a uGSI for EE16B (Designing Information Devices and Systems II), CS61C (Computer Architecture), EE120 (Signals and Systems), and EECS127 (Linear Algebra and Optimization Models).<br/><br/>
+
+						For all classes, I taught either a lab or discussion of 25-50 students, held my own office hours, and proctored and graded exams. <br/><br/>
+
+						For EECS127, I was in charge of the homework content (creation, consolidation, and release). I also created <a href="resources/teaching/eecs127_hw8.zip">jupyter notebook labs</a> with an emphasis on imaging related applications (compression, pose estimation, restoration).<br/><br/>
+
+						<figure>
+							<img src="resources/127_ex.png" class="image fit">
+							<figcaption>EECS127 Labs: Examples from Imaging assignments</figcaption>
+						</figure><br/>
+
+						For EE120, I also created new, application-based jupyter notebook labs related to <a href="resources/teaching/ee120_lab1.zip">stock price tracking</a> and <a href="resources/teaching/ee120_lab4.zip">communication systems</a>.<br/><br/>
+
+						<figure>
+							<img src="resources/120_ex.png" class="image fit">
+							<figcaption>EE120 Labs: Stock Price Tracking (Above), Basis Functions for Communication (Below)</figcaption>
+						</figure> <br/>
+
+						<h2> Apple Inc., Product Security Intern </h2>
+						<ul>
+							<li> Created a Command Line Interface to perform complex queries on a distributed graph database (under NDA)</li>
+							<li> Designed and implemented a server automation project (under NDA)</li>
 						</ul>
 					</section>
 
 					<section id="Coursework">
 						<header class="major">
-							<h2>Relevant Coursework and Skills</h2>
+							<h1>Relevant Coursework and Skills</h1>
 						</header>
-						<h3>Skills</h3>
+						<h2>Skills</h2>
 						<ul>
 							<li><u>Languages:</u> Python, Java, Swift (iOS), SQL, HTML, CSS, and C</li>
 							<li><u>Other:</u> Arduinos, DipTrace, Open CV, CAD, 3D Printing, Laser Cutting</li>
 						</ul>
-						<h3>Classes</h3>
-						<ul>
+						<h2>Classes</h2>
+						<h3> Technical </h3>
+
+						Computer Vision | Statistical Learning Theory | Statistical Signal Processing | Low Dimensional Models for High Dimensional Data | Machine Learning | Opimization Models | Digital Image Processing | Digital Signal Processing | Probability Theory | Algorithms | Information Theory | Embedded Systems | Digital Design (FPGA) | Control Systems | Robotics | Networks <br/><br/>
+
+						<h3> Non-Technical </h3>
+
+						Astronomy | Economics | Digital Music Synthesis | Music in American Cultures | Game Theory
+						<!-- <ul>
 							<li>CS189: Machine Learning</li>
 							<li>EECS127: Optimization Models</li>
 							<li>EE225B: Digital Image Processing</li>
@@ -74,60 +123,172 @@
 							<li>EE229A: Information Theory</li>
 							<li>EE106A: Robotics</li>
 							<li>CS168: Networks</li>
-						</ul>
+						</ul> -->
 					</section>
 
 				<!-- Two -->
 					<section id="Projects">
-						<h2>Additional Projects</h2>
-						<div class="row">
-							<article class="6u 12u$(xsmall) work-item">
+						<header class="major">
+							<h1>Projects</h1>
+						</header>
+
+						<!-- <div class="row"> -->
+						<div class="row 50% uniform">
+							<article class="12u$">
+								<a href="resources/290_Final_Project_Report.pdf" class="image fit thumb" target="_blank"><img src="resources/290_im.png" alt="" /></a>
+								<header>
+									<h2>Learned Low Dimensional Image Representations for Facial Recognition</h2>
+									<p><a href="resources/290_Final_Project_Report.pdf">[Paper]</a><a href="">[Code]</a></p>
+								</header>
+								<p>Proposed a modification of the dictionary-based Sparse Representation-based Classification (SRC) facial recognition algorithm using different low dimensional representations of input images. The methods of low dimensional representation proposed included: naive decimation, filtered downsampling, Haar Wavelet downsampling, Principle Component Analysis, and a learned Convolutional Autoencoder.</p>
+							</article>
+							<!-- <article class="6u 12u$(xsmall) work-item"> -->
+							<article class="12u$">
+								<a href="resources/281A_Final_Project_Report.pdf" class="image fit thumb" target="_blank"><img src="resources/281a_im.png" alt="" /></a>
+								<header>
+									<h2>A Deep-Dive of UC Berkeley Enrollment Data</h2>
+									<p><a href="resources/281A_Final_Project_Report.pdf">[Paper]</a><a href="https://github.com/surajrampure/281a-final-project">[Code]</a></p>
+								</header>
+								<p>Analyzed UC Berkeley enrollment data from several perspectives: Built a variety of both binary classifiers and regression models to predict the location of a school and admitted white male proportion, respectively, given multiple gender and ethnic features. Additionally, interpreted enrollment data from a Fairness in ML perspective.</p>
+							</article>
+							<article class="12u$">
+								<a href="resources/cs194-projs/proj3_website/index.html" class="image thumb" target="_blank"><img src="resources/cs194-projs/proj3_website/out/morph.gif" alt="" /></a>
+								<header>
+									<h2>Computational Photography</h2>
+									<p> Face Morphing Project shown</p>
+								</header>
+								<p>
+									Several projects, click on each link below for more in depth:<br/>
+									<ul>
+									<li> <a href="resources/cs194-projs/proj1_website/index.html">Colorizing the Prokudin-Gorskii Photo Collection </a><br/></li>
+									<li> <a href="resources/cs194-projs/proj2_website/index.html">Image Straightening, Sharpening, Hybrids, and Blending </a><br/></li>
+									<li> <a href="resources/cs194-projs/proj3_website/index.html"> Face Morphing </a><br/>
+									<li> <a href="resources/cs194-projs/proj4_website/index.html">MNIST Fashion Classification and Facade Segmentation (CNNs)</a><br/></li>
+									<li> <a href="resources/cs194-projs/proj5_website/index.html">Image Warping and (Auto)-Mosaicing </a><br/></li>
+									<li> <a href="resources/cs194-projs/proj_final_website/index.html"> Light Field Camera Processing, Seam Carving, HDR Imaging </a><br/></li>
+									</ul>
+								</p>
+							</article>
+							<article class="12u$">
+								<a href="resources/151_final_proj.pdf" class="image fit thumb" target="_blank"><img src="resources/151_im.png" alt="" /></a>
+								<header>
+									<h2>RISC-V FPGA CPU and Audio Synthesizer</h2>
+								</header>
+								<p>
+									Made a RISC-V 60 MHz CPU with a 3-stage pipeline that accounts for data and control hazards. The CPU is also connected to a user I/O interface and synthesizer using memory mapped I/O. The synthesizer is a monophonic subtractive synthesizer that is constructed using a numerically controlled oscillator and is capable of producing four types of tones (sinusoidal, sawtooth, square, and triangular).
+								</p>
+							</article>
+							<article class="12u$">
+								<a href="https://www.youtube.com/watch?v=ClCYKIqPlrU&t=2s" class="image fit thumb" target="_blank"><img src="resources/149_im.png" alt="" /></a>
+								<header>
+									<h2>Localization and Unpredictable Surveillance with Drones</h2>
+								</header>
+								<p>
+									Made a Crazyflie drone improviser randomly navigate between three waypoints while avoiding a Kobuki turtlebot adversary. Control logic dictated by Reactive Control Improvisation algorithm, which creates an FSM using specified LTL constraints. Localization done using Optitrack Motion Capture, and orchestration done via ROS.
+								</p>
+							</article>
+							<article class="12u$">
+								<a href="resources/gan_inpainting.pdf" class="image fit thumb" target="_blank"><img src="resources/149_im.png" alt="" /></a>
+								<header>
+									<h2>Image Object Removal</h2>
+								</header>
+								<p>
+									Combined Mask R-CNN and Generative Image Inpainting (GAN) architectures in order to inpaint objects in a scene.
+								</p>
+							</article>
+							<article class="12u$">
+								<a href="resources/123_final_proj.pdf" class="image fit thumb" target="_blank"><img src="resources/149_im.png" alt="" /></a>
+								<header>
+									<h2>Radio Modem and Image Compression Algorithm</h2>
+								</header>
+								<p>
+									Combined Mask R-CNN and Generative Image Inpainting (GAN) architectures in order to inpaint objects in a scene.
+								</p>
+							</article>
+							<article class="12u$">
+								<a href="https://www.youtube.com/watch?v=MyIljPFMolQ" class="image fit thumb" target="_blank"><img src="resources/149_im.png" alt="" /></a>
+								<header>
+									<h2>Self-Inverting Pendulum</h2>
+								</header>
+								<p>
+									Created a self-inverting pendulum by combining a PID Controller with a Leunberger Observer for state estimation and Bang-Bang control for swing-up.
+								</p>
+							</article>
+							<article class="12u$">
+								<a href="resources/126_project.pdf" class="image fit thumb" target="_blank"><img src="resources/149_im.png" alt="" /></a>
+								<header>
+									<h2>Random Music Generation</h2>
+								</header>
+								<p>
+									Generated new music by training on existing music of different genres using a Markov Chain
+								</p>
+							</article>
+							<article class="12u$">
+								<a href="https://www.youtube.com/watch?v=MyIljPFMolQ" class="image fit thumb" target="_blank"><img src="resources/149_im.png" alt="" /></a>
+								<header>
+									<h2>Network Router and Optimizer</h2>
+								</header>
+								<p>
+									- Router implementation - implemented **distance-vector routing**, a distributed routing algorithm
+									- WAN Optimizer - built a **middlebox** that optimizes the amount of data transmitted over a wide area network
+								</p>
+							</article>
+							<article class="12u$">
+								<a href="https://www.youtube.com/watch?v=MyIljPFMolQ" class="image fit thumb" target="_blank"><img src="resources/149_im.png" alt="" /></a>
+								<header>
+									<h2>Webcam Musical Instrument</h2>
+								</header>
+								<p>
+									TODO
+								</p>
+							</article>
+							<article class="12u$">
 								<a href="https://devpost.com/software/food-analyzer" class="image fit thumb" target="_blank"><img src="images/food_analyzer.jpg" alt="" /></a>
 								<header>
-									<h3>Food Analyzer</h3>
+									<h2>Food Analyzer</h2>
 									<p>3<sup>rd</sup> Place, Hack UCSC</p>
 								</header>
 								<p>Food Analyzer is a Chrome extension that uses web scrapers, machine learning, and natural language processing to instantaneously obtain relevant nutritional information for recipes and ingredients seen online. It allows the user to identify unhealthy ingredients and make alternative decisions.</p>
 							</article>
-							<article class="6u$ 12u$(xsmall) work-item">
+							<article class="12u$">
 								<a href="https://rab.berkeley.edu/dxm" target="_blank" class="image fit thumb"><img src="images/snack_robot.jpg" alt="" /></a>
 								<header>
-									<h3>Snack Delivery Robot</h3>
+									<h2>Snack Delivery Robot</h2>
 									<p>3<sup>rd</sup> Place, Robotics at Berkeley Dorm Ex Machina Competition</p>
 								</header>
 								<p>As a part of the Dorm Ex Machina Competition, we created a Automated Snack Delivery Robot. We CAD’ed and built the robot from the ground up with a $100 budget using a Raspberry Pi, OpenCV, Homemade Line Sensors, and a Motor Controller</p>
 							</article>
-							<article class="6u 12u$(xsmall) work-item">
+							<article class="12u$">
 								<a href="https://github.com/sukritarora/Reddit_Project" target="_blank" class="image fit thumb"><img src="images/wallpaper.jpg" alt="" /></a>
-								<h3>Wallpaper Setter Script</h3>
+								<h2>Wallpaper Setter Script</h2>
 								<p>Created a wallpaper setter in python that used Reddit APIs to get the latest landscape pictures from r/ EarthPorn and set them as my desktop background. Additionally, I wrote a plist script in order to automate image getting</p>
 							</article>
-							<article class="6u 12u$(xsmall) work-item">
+							<article class="12u$">
 								<a href="https://devpost.com/software/milestones" target="_blank" class="image fit thumb"><img src="images/milestones.jpg" alt="" /></a>
 								<header>
-									<h3>MileStones</h3>
+									<h2>MileStones</h2>
 									<p>CalHacks 3.0</p>
 								</header>
 								<p>Created MileStones, a scavenger hunt web app that takes users from one location to the next based on user feedback, allowing them to discover and explore new places that match their taste. Used Yelp, Weather.com, and IBM Watson APIs and Flask Libraries to create a working prototype in only 36 hours time </p>
 							</article>
-							<article class="6u 12u$(xsmall) work-item">
+							<article class="12u$">
 								<a href="https://esap.seas.upenn.edu/courses/robotics/" target="_blank" class="image fit thumb"><img src="images/penn_eng.png" alt="" /></a>
 								<header>
-									<h3>Engineering Summer Academy at The University of Pennsylvania</h3>
+									<h2>Engineering Summer Academy at The University of Pennsylvania</h2>
 									<p>1 <sup>st</sup> Place BattleBots Competition Winner</p>
 								</header>
 								<p>Competitive residential summer program at UPenn in Robotics</p>
 							</article>
-							<article class="6u$ 12u$(xsmall) work-item">
+							<article class="12u$">
 								<a href="https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=1005409561&mt=8" target="_blank" class="image fit thumb"><img src="images/food_watchers.png" alt="" /></a>
-								<h3>Founder of Food Watchers</h3>
+								<h2>Founder of Food Watchers</h2>
 								<p>Food Watchers is an iPhone application designed in partnership with Stanford’s Lucile Packard Hospital’s Pediatric Weight Management Program. It encourages healthy food
 								habits for obese participants in a simple and accessible way. It has been rolled out to current participants of the program and has over 1000 downloads in 5 different continents</p>
 							</article>
-							<article class="6u$ 12u$(xsmall) work-item">
+							<article class="12u$">
 								<a href="https://devpost.com/software/signedin" class="image fit thumb"><img src="images/signedin.jpg" alt="" /></a>
 								<header>
-									<h3>SignedIn</h3>
+									<h2>SignedIn</h2>
 									<p>HackingEDU Hackathon</p>
 								</header>
 								<p>Developed a beta version of a sign language to text converter. Developed on a LEAP motion with Python using LEAP motion API and a neural network machine learning algorithm to make hand recognition faster and more accurate</p>
@@ -141,8 +302,8 @@
 					</section>
 
 				<!-- Four -->
-<!--
-					<section id="four">
+
+					<!-- <section id="four">
 						<h2>Elements</h2>
 
 						<section>
@@ -466,7 +627,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<footer id="footer">
 				<div class="inner">
 					<ul class="icons">
-						<li><a href="https://www.facebook.com/sukibae1122" target="_blank" class="icon fa-facebook-square"><span class="label">Twitter</span></a></li>
+						<li><a href="https://www.linkedin.com/in/sukritarora/" target="_blank" class="icon fa-linkedin"><span class="label">Twitter</span></a></li>
 						<li><a href="https://github.com/sukritarora" target="_blank" class="icon fa-github"><span class="label">Github</span></a></li>
 						<li><a href="mailto:sukrit.arora@berkeley.edu?Subject=From%20Website" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
 						<li><a href="Sukrit%20Arora%20Resume.pdf" class="icon fa-file-text-o"><span class="label">Email</span></a></li>

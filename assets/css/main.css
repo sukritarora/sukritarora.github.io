@@ -22,6 +22,10 @@
 		display: block;
 	}
 
+	figure figcaption {
+	    text-align: center;
+	}
+
 	body {
 		line-height: 1;
 	}
@@ -2577,7 +2581,7 @@
 	}
 
 		#main > section {
-			border-top: solid 2px #efefef;
+			border-top: solid 3px #D3D3D3;
 			margin: 4em 0 0 0;
 			padding: 4em 0 0 0;
 		}
