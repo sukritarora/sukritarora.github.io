@@ -20,9 +20,9 @@
 				<div class="inner">
 					<a href="#" class="image avatar"><img src="images/profile_london_low_res.jpg" alt="" /></a>
 					<h1><strong>Sukrit Arora</strong><br/><br/><br/>
-					CVML Engineer @ KLA | <br/>
+					Founding Research Engineer @ Deepnight (YC) | <br/>
 					UC Berkeley, EECS MS <br />
-					
+
 				</h1> <br/>
 					<h4> <a href="#me"> About Me</a> </h4>
 					<h4> <a href="#Experience"> Work Experience</a> </h4>
@@ -39,21 +39,31 @@
 						<header class="major">
 							<h1>About Me</h1>
 						</header>
-						<p> My name is Sukrit and I am an AI/ML Algorithm Engineer at KLA working on researching, prototyping,
-							and deploying cutting-edge deep learning models for computer vision tasks on electron microscope images
-							of semiconductor chips. My work and interests include unsupervised + self-supervised learning for anomaly
-							detection, generative modeling, deep metric learning, and explainable AI. <br><br>
+						<p> My name is Sukrit, and I am a Founding Research Engineer &amp; Tech Lead at <a href="https://deepnight.ai" target="_blank">Deepnight (YC)</a>,
+							a startup building AI-powered night vision technology for embedded hardware. I own the full ML pipeline end-to-end —
+							from raw sensor data collection and probabilistic noise modeling, all the way through model architecture design,
+							multi-GPU training infrastructure, and deploying quantized models to production edge devices from Qualcomm and NVIDIA.
+							Our system achieves state-of-the-art low-light video performance at 90 FPS, 6.4 MP resolution, and under 1W of power,
+							enabling all-day field operation. I also lead the technical roadmap as Tech Lead and have contributed to our Series A fundraising.
+							Our work has resulted in 3 patents covering novel methods in low-light image processing and edge AI. <br><br>
 
-							Before my time at KLA, I was getting my MS from UC Berkeley, where I researched and developed deep learning
-							applications for medical image (MRI) denoising, reconstruction, deblurring, and stitching, which you can read
-							more about <a href="#GradResearch">here</a>. <br><br>
-							
-							During my time at Berkeley, I also enjoyed TA’ing several different courses, from computer architecture to signals
-							and optimization theory. Read more about my teaching work <a href="#Teaching">here</a>. I still teach and mentor when I can in my 
-							current role at KLA. I recently co-taught an internal <a href="https://github.com/yoavram/DataSciPy/blob/master/index.ipynb">Introduction to Deep Learning</a>
-							course with Prof. Yoav Ram, and regularly mentor summer interns. <br><br>
-							
-							Check out some of the projects that I have worked on in the past <a href="#Projects">here</a>
+							Before Deepnight, I spent nearly three years as an AI/ML Algorithm Engineer at KLA, working on deep learning for
+							semiconductor defect detection on electron microscope images. My projects there ranged from unsupervised generative AI
+							for zero-annotation anomaly detection, to deep metric learning for reverse image search, to network saliency visualization
+							for some of the world’s largest semiconductor manufacturers and government clients. I also secured a competitive research
+							grant for a collaboration with UW-Madison and co-taught an internal deep learning course to 20+ engineers.
+							Read more <a href="#KLA">here</a>. <br><br>
+
+							Before KLA, I completed my MS at UC Berkeley in EECS, where I worked in Prof. Michael Lustig’s Computational Imaging Lab
+							on deep learning for medical MRI — specifically on unsupervised, single-shot methods for image denoising and accelerated
+							reconstruction. Read more about my research <a href="#GradResearch">here</a>. <br><br>
+
+							During my time at Berkeley, I also really enjoyed TA’ing — I taught courses spanning computer architecture, signals and
+							systems, and linear algebra and optimization. I got to create new labs and homework content, which was some of the most
+							rewarding work I did as a student. Read more about my teaching <a href="#Teaching">here</a>. <br><br>
+
+							Outside of work, I’m interested in photography, music, and finding ways to combine the two with the things I build.
+							Check out some of my past projects <a href="#Projects">here</a>
 						<ul class="actions">
 							<li><a href="Sukrit%20Arora%20Resume.pdf" class="button">CV</a></li>
 						</ul>
@@ -64,9 +74,47 @@
 							<h1>Work Experience</h1>
 						</header>
 						
+						<h2> <a id="Deepnight"></a>Deepnight (YC), Founding Research Engineer &amp; Tech Lead </h2>
+
+						Deepnight is a YC-backed startup building AI-powered night vision for embedded hardware. As a founding engineer,
+						I built the entire ML pipeline from scratch — starting from raw sensor data collection and developing probabilistic
+						models of noise and signal, all the way through designing the model architecture, building multi-GPU cloud training
+						infrastructure, and deploying to production edge devices. The core task is real-time video denoising: taking noisy,
+						low-light footage from a custom sensor and producing clean, high-quality video on device, in real time, at extremely
+						low power. <br><br>
+
+						We achieved state-of-the-art low-light video performance: <strong>90 FPS at 6.4 MP resolution at under 1W of power</strong>
+						on Qualcomm and NVIDIA embedded SoCs, enabling sustained all-day field operation. You can see a demo of our system
+						<a href="https://vimeo.com/1189988624?share=copy&fl=sv&fe=ci" target="_blank">here</a> — those really are cats, and it really is pitch dark. <br><br>
+
+						A large part of my work has been on making models small and fast enough to run on embedded hardware without sacrificing
+						quality. This involved developing quantization-aware training (QAT) pipelines targeting the Qualcomm AI Engine (SNPE/QNN)
+						and NVIDIA Jetson, producing INT8 models that preserve perceptual quality on real-world night scenes. <br><br>
+
+						In addition to the technical work, I serve as Tech Lead — leading sprint planning and technical roadmap decisions,
+						and contributing to our Series A fundraising through investor technical demos and due diligence. Our work has produced
+						3 patents covering novel methods in low-light image processing and edge AI deployment. <br><br>
+
 						<h2> <a id="KLA"></a>KLA, AI/ML Algorithm Engineer </h2>
 
-						Description pending approval<br><br>
+						KLA is one of the world's leading semiconductor process control and yield management companies. As an ML/AI Algorithm
+						Engineer on the R&amp;D team, I developed deep learning systems for analyzing scanning electron microscope (SEM) images
+						of semiconductor chips — a domain that demands extreme precision and generalization across highly varied manufacturing conditions. <br><br>
+
+						One of my favorite projects was developing an unsupervised generative AI segmentation system for anomaly detection that
+						required zero human annotation — eliminating days of manual labeling per production run and reducing time-to-deployed-model
+						by over 4 hours. I also built a deep metric learning reverse image search system using contrastive and triplet loss across
+						multi-source defect datasets, which improved downstream classification model performance by <strong>60%</strong> through
+						better training data curation. <br><br>
+
+						Beyond the core research, I implemented network saliency visualization methods to help semiconductor manufacturers and
+						government clients understand model reasoning — directly improving field debugging turnaround and building trust in our
+						systems. I also secured a competitive research grant for a KLA–UW-Madison collaboration on continual deep learning for
+						image segmentation, managing the partnership from proposal through execution. <br><br>
+
+						On the people side, I mentored two summer interns and co-taught an internal
+						<a href="https://github.com/yoavram/DataSciPy/blob/master/index.ipynb">Introduction to Deep Learning</a> course to
+						over 20 engineers across the organization. I received Engineer of the Month and Team of the Month awards during my time there. <br><br>
 
 						<h2> <a id="GradResearch"></a>UC Berkeley Research, Computational Medical Imaging </h2>
 
